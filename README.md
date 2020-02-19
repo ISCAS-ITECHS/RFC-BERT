@@ -32,7 +32,7 @@ file is RFC-EL-2020_v1.0.tsv,format is tsv.
 |**Our Model**  |  **PEL-BERT**   |  **72.9%**  | **73.7%** | **74.7%** | **74.2%**|  
 
 ## Demo
-http://39.104.17.164:17474/browser/  
+http://39.104.17.164:7474/browser/  
 neo4j  
 123456  
 
