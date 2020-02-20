@@ -23,18 +23,16 @@ file is RFC-EL-2020_v1.0.tsv,format is tsv.
 |760|	Identification|	An identifying value assigned by the sender to aid in assembling the fragments of a datagram .| 	400
 760	|Flags|	Flags : 3 bits|	231|
 
-## result 
-
-|Exp. Group |  Model      |  Acc    | Avg_P | Avg_R | Avg_F|
-|  ----     | ----        |----     |----   |----   |----  |
-|Baseline   |  SVM        |  10.8%  | 10.4% | 10.8% | 10.6%|
-|           |  BPNN       |  55.8%  | 47.8% | 48.7% | 48.2%|
-|           |  CNN        |  48.0%  | 44.5% | 45.2% | 44.8%|
-|           |  Bi-GRU     |  53.6%  | 44.9% | 41.3% | 43.0%|
-|           |  Adhikari   |  57.6%  | 48.3% | 48.3% | 48.3%|
-|**Our Model**  |  **PEL-BERT**   |  **72.9%**  | **73.7%** | **74.7%** | **74.2%**|  
-
-Detailed results of Acc, Avg_P, Avg_R, Avg_F are shown.   
+## Experiment result 
+|  Model      |  Acc    | Precision | Recall | F1|
+| ----        |----     |----   |----   |----  |
+|  SVM        |  10.8%  | 10.4% | 10.8% | 10.6%|
+|  BPNN       |  55.8%  | 47.8% | 48.7% | 48.2%|
+|  CNN        |  48.0%  | 44.5% | 45.2% | 44.8%|
+|  Bi-GRU     |  53.6%  | 44.9% | 41.3% | 43.0%|
+|  Adhikari   |  57.6%  | 48.3% | 48.3% | 48.3%|
+|  **RFC-BERT<sub>ours</sub>**   |  **72.9%**  | **73.7%** | **74.7%** | **74.2%**|  
+  
 Best results are highlighted in bold font.   
 Training is done on RFC-EL-2020. 
 ## Demo
