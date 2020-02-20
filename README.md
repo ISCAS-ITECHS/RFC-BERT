@@ -41,8 +41,8 @@ username:neo4j
 password:123456  
 
 ![image-Evolution](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/rfc791-IP-update.png)  
-*Exp1. The evolution of rfc791 (Internet Protocol)*  
+*Exp1. The evolution of rfc791 (Internet Protocol) , RFC : red color, Header Fileds of RFC : green color*  
 
  
 ![image-CorrelationAnalysis](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/rfc791-IP-Fields.png)  
-*Exp2. Correlation analysis of header fields in rfc791 (Internet Protocol)*   
+*Exp2. Correlation analysis of header fields in rfc791 (Internet Protocol) , RFC : red color, Header Fileds of RFC : green color*   
