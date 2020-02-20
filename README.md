@@ -1,12 +1,15 @@
 # RFC-EL-2020 
 Joint_Model_for_RFC_Protocol_Entity_Linking  
 ## Abstract    
-Internet protocol analysis is an advanced computer networking topic that uses a packet analyzer to capture, view, and understand Internet protocols. Due to the long period, not uniform format, and strong domain-specific of the RFC document context, it is a challenging issue to identify and link the field entities in RFC document protocol using the current methods. The pre-trained models, such as BERT, are widely used in NLP tasks and are fine-tuned to improve the performance of various natural language processing tasks consistently. Nevertheless, the fine-tuned BERT model trained on our protocol corpus still has a weak performance on the entity linking mission. In this paper, we propose a model that joints a fine-tuned language model with an RFC Domain Model to link named entities in the protocols to categories in the protocol knowledge base. Firstly, we design a protocol knowledge base as the schema for protocol entity linking. Secondly, we use the heuristic methods to identify the protocol entities and infer the descriptions from the nearby contexts of its header field using the Zero-Shot Learning method. Finally, we conduct comprehensive experiments on the RFC dataset by using our joint model and baseline methods to make protocol entity linking. Experimental results demonstrate that our model achieves state-of-the-art performance in entity linking on our annotated dataset, outperforming all the baselines. Besides, we release a data set of entity linking in the field of computer networks, RFC-EL-2020, which provides help for researchers to fine-grained analyze and utilize protocols.
-![image](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/example.png)  
-
-![image](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/overview.png)  
-
-![image](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/model.png)  
+Internet protocol analysis is an advanced computer networking topic that uses a packet analyzer to capture, view, and understand Internet protocols. Due to the long period, not uniform format, and strong domain-specific of the RFC document context, it is a challenging issue to identify and link the field entities in RFC document protocol using the current methods. The pre-trained models, such as BERT, are widely used in NLP tasks and are fine-tuned to improve the performance of various natural language processing tasks consistently. Nevertheless, the fine-tuned BERT model trained on our protocol corpus still has a weak performance on the entity linking mission. In this paper, we propose a model that joints a fine-tuned language model with an RFC Domain Model to link named entities in the protocols to categories in the protocol knowledge base. Firstly, we design a protocol knowledge base as the schema for protocol entity linking. Secondly, we use the heuristic methods to identify the protocol entities and infer the descriptions from the nearby contexts of its header field using the Zero-Shot Learning method. Finally, we conduct comprehensive experiments on the RFC dataset by using our joint model and baseline methods to make protocol entity linking. Experimental results demonstrate that our model achieves state-of-the-art performance in entity linking on our annotated dataset, outperforming all the baselines. Besides, we release a data set of entity linking in the field of computer networks, RFC-EL-2020, which provides help for researchers to fine-grained analyze and utilize protocols.  
+![image-Overview](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/overview.png)  
+*Fig. 1. Overview of Entity Linking in RFCs. I. Entity Extraction. II. Context Inference. III. Entity Linking.*  
+  
+![image-Examples](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/example.png)  
+*Fig. 2. Examples of Various Writing Styles in RFCs. Data frames are extracted from RFC3451 and RFC791. Header field ”Verion” is written as Version in RFC791 whereas abbreviated V is used in RFC3451. Header field ”Header Length” is written as IHL in RFC791 whereas HDR LEN is used in RFC3451. Header field ”Flag” is written as Flag in RFC791 whereas every flag bit is displayed in RFC3451.*    
+  
+![image-Architecture](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/model.png)  
+*Fig. 3. RFC-BERT Model Architecture*  
 
 ## RFC-EL-2020 dataset 
 file is RFC-EL-2020_v1.0.tsv,format is tsv.  
@@ -31,11 +34,17 @@ file is RFC-EL-2020_v1.0.tsv,format is tsv.
 |           |  Adhikari   |  57.6%  | 48.3% | 48.3% | 48.3%|
 |**Our Model**  |  **PEL-BERT**   |  **72.9%**  | **73.7%** | **74.7%** | **74.2%**|  
 
-## Demo
-http://39.104.17.164:7474/browser/  
-neo4j  
-123456  
-
 Detailed results of Acc, Avg_P, Avg_R, Avg_F are shown.   
 Best results are highlighted in bold font.   
-Training is done on RFC-EL-2020.  
+Training is done on RFC-EL-2020. 
+## Demo
+http://39.104.17.164:7474/browser/  
+username:neo4j  
+password:123456  
+
+![image-Evolution](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/rfc791-IP-update.png)  
+*Exp1. The evolution of rfc791 (Internet Protocol)*  
+
+ 
+![image-CorrelationAnalysis](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/rfc791-IP-Fields.png)  
+*Exp2. Correlation analysis of header fields in rfc791 (Internet Protocol)*   
