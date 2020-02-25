@@ -51,11 +51,11 @@ password:123456
 ![image-CorrelationAnalysis](https://github.com/ISCAS-ITECHS/RFC-BERT/blob/master/data/rfc791-IP-Fields.png)  
 *Exp2. Correlation analysis of header fields in rfc791 (Internet Protocol) , RFC : red color, Header Fileds of RFC : green color*   
 
-#### entity, relationship , entity 
-<entity_rfc, relationship_update,entity_rfc>,
-<entity_rfc, relationship_obsolete,entity_rfc>, 
-<entity_rfc, relationship_reference, entity_rfc>,
-<entity_rfc, relationship_author,entity_author>, 
-<entity_rfc, relationship_field,entity_filed>, 
-<entity_filed, relationship_next,entity_filed>, 
-<entity_filed, relationship_similiar,entity_filed>,
+#### entity, relationship , entity   
+<entity_rfc, relationship_update,entity_rfc>,  
+<entity_rfc, relationship_obsolete,entity_rfc>,   
+<entity_rfc, relationship_reference, entity_rfc>,  
+<entity_rfc, relationship_author,entity_author>,   
+<entity_rfc, relationship_field,entity_filed>,   
+<entity_filed, relationship_next,entity_filed>,   
+<entity_filed, relationship_similiar,entity_filed>,  
