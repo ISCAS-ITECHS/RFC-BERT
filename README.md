@@ -40,7 +40,7 @@ file is RFC-EL-2020_v1.0.tsv,format is tsv.
 Best results are highlighted in bold font.   
 
 ## RFC-KG-2020  
-http://39.104.17.164:8080/browser/  
+http://39.104.17.164:7474 
 username:neo4j  
 password:123456  
 
